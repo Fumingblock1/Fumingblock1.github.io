@@ -4,41 +4,164 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Riaan Engelbrecht - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Riaan Engelbrecht</h1>
+      <p>Self-Taught Web Developer | Crafting Engaging Digital Experiences</p>
+      <a href="#projects" class="hero-button">Explore My Work</a>
+    </div>
+  </section>
   <header>
-    <h1>Riaan Engelbrecht</h1>
     <nav>
-      <a href="#home">Home</a>
+      <a href="#hero">Home</a>
       <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
       <a href="#about">About</a>
       <a href="#contact">Contact</a>
+      <a href="#fun">Fun</a>
     </nav>
-    <button onclick="toggleDarkMode()">Toggle Dark Mode</button>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
   </header>
   <section id="projects">
-    <h2>Projects</h2>
-    <div class="project">
-      <h3>Personal Blog Website</h3>
-      <p>Built a responsive blog using HTML, CSS, and JavaScript as part of freeCodeCamp's curriculum. Features include a clean layout, navigation menu, and interactive comment section.</p>
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3><i class="fas fa-blog"></i> Personal Blog Website</h3>
+        <p>Built a responsive blog using HTML, CSS, and JavaScript as part of freeCodeCamp's curriculum. Features include a clean layout, navigation menu, and interactive comment section.</p>
+      </div>
+      <div class="project">
+        <h3><i class="fas fa-shopping-cart"></i> Product Landing Page</h3>
+        <p>Created a product landing page with HTML and CSS for a freeCodeCamp project. Implemented responsive design and styled buttons for user engagement.</p>
+      </div>
+      <div class="project">
+        <h3><i class="fas fa-calculator"></i> JavaScript Calculator</h3>
+        <p>Developed a functional calculator using JavaScript, HTML, and CSS through freeCodeCamp. Includes basic arithmetic operations and a dynamic display.</p>
+      </div>
     </div>
-    <div class="project">
-      <h3>Product Landing Page</h3>
-      <p>Created a product landing page with HTML and CSS for a freeCodeCamp project. Implemented responsive design and styled buttons for user engagement.</p>
-    </div>
-    <div class="project">
-      <h3>JavaScript Calculator</h3>
-      <p>Developed a functional calculator using JavaScript, HTML, and CSS through freeCodeCamp. Includes basic arithmetic operations and a dynamic display.</p>
-    </div>
+  </section>
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li><i class="fab fa-html5"></i> HTML</li>
+      <li><i class="fab fa-css3-alt"></i> CSS</li>
+      <li><i class="fab fa-js"></i> JavaScript</li>
+      <li><i class="fab fa-git-alt"></i> Git</li>
+    </ul>
   </section>
   <section id="about">
     <h2>About Me</h2>
     <p>Hi, I'm Riaan, a passionate self-taught web developer with skills in HTML, CSS, and JavaScript, honed through freeCodeCamp's interactive courses. I work part-time and dedicate my spare time to building responsive, user-friendly websites. I enjoy solving problems and learning new technologies to create engaging digital experiences. My goal is to contribute to innovative web projects while growing as a developer.</p>
   </section>
+  <section id="fun">
+    <h2>Fun</h2>
+    <div class="trivia-container">
+      <h3><i class="fas fa-robot"></i> AI-Powered Tech Trivia</h3>
+      <div id="question" class="question"></div>
+      <div id="options" class="options"></div>
+      <div id="result"></div>
+      <button id="play-again" class="trivia-button">Play Again</button>
+    </div>
+    <div class="code-cracker-container">
+      <h3><i class="fas fa-brain"></i> AI Code Cracker Challenge</h3>
+      <p class="game-instructions">Guess the 4-digit code (0-9). Enter your guess and get AI feedback!</p>
+      <input type="text" id="code-guess" placeholder="Enter 4-digit code (e.g., 1234)" maxlength="4" class="code-input">
+      <button id="submit-guess" class="trivia-button">Submit Guess</button>
+      <div id="code-feedback"></div>
+      <div id="attempts">Attempts: 0/10</div>
+      <button id="reset-code-cracker" class="trivia-button">Reset Game</button>
+    </div>
+  </section>
   <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: riaanengelbrechty@gmail.com</p>
-    <p>GitHub: <a href="https://github.com/Fumingblock1">Fumingblock1.github.io</a></p>
+    <h2>Contact Me</h2>
+    <p><i class="fas fa-envelope"></i> Email: riaanengelbrechty@gmail.com</p>
+    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Fumingblock1">Fumingblock1.github.io</a></p>
+  </section>
+</body>
+</html><!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Riaan Engelbrecht - Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Hi, I'm Riaan Engelbrecht</h1>
+      <p>Self-Taught Web Developer | Crafting Engaging Digital Experiences</p>
+      <a href="#projects" class="hero-button">Explore My Work</a>
+    </div>
+  </section>
+  <header>
+    <nav>
+      <a href="#hero">Home</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#about">About</a>
+      <a href="#contact">Contact</a>
+      <a href="#fun">Fun</a>
+    </nav>
+    <button id="dark-mode-toggle">Toggle Dark Mode</button>
+  </header>
+  <section id="projects">
+    <h2>My Projects</h2>
+    <div class="projects">
+      <div class="project">
+        <h3><i class="fas fa-blog"></i> Personal Blog Website</h3>
+        <p>Built a responsive blog using HTML, CSS, and JavaScript as part of freeCodeCamp's curriculum. Features include a clean layout, navigation menu, and interactive comment section.</p>
+      </div>
+      <div class="project">
+        <h3><i class="fas fa-shopping-cart"></i> Product Landing Page</h3>
+        <p>Created a product landing page with HTML and CSS for a freeCodeCamp project. Implemented responsive design and styled buttons for user engagement.</p>
+      </div>
+      <div class="project">
+        <h3><i class="fas fa-calculator"></i> JavaScript Calculator</h3>
+        <p>Developed a functional calculator using JavaScript, HTML, and CSS through freeCodeCamp. Includes basic arithmetic operations and a dynamic display.</p>
+      </div>
+    </div>
+  </section>
+  <section id="skills">
+    <h2>My Skills</h2>
+    <ul>
+      <li><i class="fab fa-html5"></i> HTML</li>
+      <li><i class="fab fa-css3-alt"></i> CSS</li>
+      <li><i class="fab fa-js"></i> JavaScript</li>
+      <li><i class="fab fa-git-alt"></i> Git</li>
+    </ul>
+  </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Hi, I'm Riaan, a passionate self-taught web developer with skills in HTML, CSS, and JavaScript, honed through freeCodeCamp's interactive courses. I work part-time and dedicate my spare time to building responsive, user-friendly websites. I enjoy solving problems and learning new technologies to create engaging digital experiences. My goal is to contribute to innovative web projects while growing as a developer.</p>
+  </section>
+  <section id="fun">
+    <h2>Fun</h2>
+    <div class="trivia-container">
+      <h3><i class="fas fa-robot"></i> AI-Powered Tech Trivia</h3>
+      <div id="question" class="question"></div>
+      <div id="options" class="options"></div>
+      <div id="result"></div>
+      <button id="play-again" class="trivia-button">Play Again</button>
+    </div>
+    <div class="code-cracker-container">
+      <h3><i class="fas fa-brain"></i> AI Code Cracker Challenge</h3>
+      <p class="game-instructions">Guess the 4-digit code (0-9). Enter your guess and get AI feedback!</p>
+      <input type="text" id="code-guess" placeholder="Enter 4-digit code (e.g., 1234)" maxlength="4" class="code-input">
+      <button id="submit-guess" class="trivia-button">Submit Guess</button>
+      <div id="code-feedback"></div>
+      <div id="attempts">Attempts: 0/10</div>
+      <button id="reset-code-cracker" class="trivia-button">Reset Game</button>
+    </div>
+  </section>
+  <section id="contact">
+    <h2>Contact Me</h2>
+    <p><i class="fas fa-envelope"></i> Email: riaanengelbrechty@gmail.com</p>
+    <p><i class="fab fa-github"></i> GitHub: <a href="https://github.com/Fumingblock1">Fumingblock1.github.io</a></p>
   </section>
 </body>
 </html>
